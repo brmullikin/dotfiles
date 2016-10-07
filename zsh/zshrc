@@ -21,7 +21,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew npm last-working-dir)
+plugins=(git brew npm history last-working-dir zsh-syntax-highlighting)
 
 # source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -34,3 +34,7 @@ for files in ${DIR}/**/*.zsh; do source $files; done
 # source ${DIR}/sublime_text/sublime.zsh
 # source ${DIR}/ohmyzsh/settings.zsh
 # ...
+
+# Source zsh-syntax-highlighting at the end.
+source ~/.oh-my-zsh/custom/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
