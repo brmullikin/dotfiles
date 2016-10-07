@@ -1,0 +1,11 @@
+1. Try to install zsh
+2. Install oh-my-zsh
+3. Install zsh-syntax-highlighting
+4. Install homebrew & default homebrew packages
+5. Set MacOS to sane defaults
+6. Install Sublime Text Settings (Package Control)
+7. Install HOSTS file
+8. Install http.conf file
+9. Install NPM sane defaults
+10. Install virtualenvwrapper
+11. Source environs if it exists
