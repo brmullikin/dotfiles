@@ -22,14 +22,6 @@ alias tpb='www; cd heroku/towerpressbooks'
 alias hsc='www; cd homestead/code'
 alias hsl='www; cd homestead/launch'
 
-# # Sublime Text
-# alias e='subl .'
-# alias sub='subl'
-
-# LS
-alias ls='ls -G'
-unsetopt auto_cd
-
 # Servers
 alias plato='ssh ben@plato.dissata.com -p 326'
 alias cicero='ssh root@cicero.dissata.com'
