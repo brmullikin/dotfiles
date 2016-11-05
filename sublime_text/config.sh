@@ -15,8 +15,8 @@
 
 if test $(which brew); then
 
-    # Install Sublime text via the command line
-    # This also installs subl to your path
+    #Install Sublime text via the command line
+    #This also installs subl to your path
     brew cask install sublime-text
     echo "Sublime Text installed"
 
@@ -24,14 +24,26 @@ if test $(which brew); then
     brew cask install font-hack
     echo "Font Hack Installed"
 
-    # Install Package Controll
-    cp $PWD/sublime_text/sublime_files/Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/Package\ Control.sublime-package
+    DOT_DIR="$PWD/sublime_text/sublime_files/"
+    SUB_DIR="$HOME/Library/Application Support/Sublime Text 3"
+    SUB_INS_DIR="$SUB_DIR/Installed Packages"
+    SUB_USR_DIR="$SUB_DIR/Packages/User"
+    STAMP=$(date +%s)
 
-    # Symbolic link for sublime text packages
-    mv ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings.old
-    ln -s $PWD/sublime_text/sublime_files/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
+    if [[ -d $SUB_INS_DIR ]] || mkdir -p "$SUB_INS_DIR"; then
+        cp "$DOT_DIR/Package Control.sublime-package" "$SUB_INS_DIR/Package Control.sublime-package"
+    fi
 
-    # Symbolic link for sublime text packages
-    mv ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings.old
-    ln -s $PWD/sublime_text/sublime_files/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+    if [[ -d $SUB_USR_DIR ]] || mkdir -p "$SUB_USR_DIR"; then
+        if [ -f "$SUB_USR_DIR/Package Control.sublime-settings" ]; then
+            mv "$SUB_USR_DIR/Package Control.sublime-settings" "$SUB_USR_DIR/Package Control.sublime-settings.$STAMP"
+        fi
+        if [ -f "$SUB_USR_DIR/Preferences.sublime-settings" ]; then
+            mv "$SUB_USR_DIR/Preferences.sublime-settings" "$SUB_USR_DIR/Preferences.sublime-settings.$STAMP"
+        fi
+
+        ln -s "$DOT_DIR/Package Control.sublime-settings" "$SUB_USR_DIR/Package Control.sublime-settings"
+
+        ln -s "$DOT_DIR/Preferences.sublime-settings" "$SUB_USR_DIR/Preferences.sublime-settings"
+    fi
 fi
