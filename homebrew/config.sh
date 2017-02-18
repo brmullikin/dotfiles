@@ -24,7 +24,7 @@ for brew_pkg in ${brew_packges}; do
 done
 
 # Node install command is here to guarantee brew node is run first
-node_packges="bower generator-wordpress grunt gulp jshint less yo"
+node_packges="bower gulp jshint less yo"
 if test $(which npm); then
     for node_pkg in ${node_packges}; do
         if ! npm list -g --depth=0 | grep -q "${node_pkg}"; then

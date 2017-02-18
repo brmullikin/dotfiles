@@ -67,16 +67,18 @@ function brmflask() {
 }
 
 function brmpress() {
+    # TODO
+    # 1. rename local-config-example.php to local-config.php
     if [ $# -eq 0 ]; then
         echo "No folder name supplied";
     elif [ -d "$PWD/$1" ]; then
         echo "Directory already exists. Please choose another directory."
     else
-        if ask "Install BRMPRESS in directory $PWD/$1?"; then
+        if ask "Install BRMPRESS v0.0.2 in directory $PWD/$1?"; then
             echo "Installing BRMPRESS..."
             git clone git@github.com:brmullikin/brmpress.git $1
             cd $1
-            git checkout tags/v0.0.1
+            git checkout tags/v0.0.2
             rm -rf ".git"
             git init
             git add .
@@ -88,9 +90,6 @@ function brmpress() {
             echo "Ready to go."
         fi
     fi
-    # 1. Need to check for argument
-    # 2. Need to confirm install
-    # 3. Write BRMPRESS install commands
 }
 
 function confirm() {
