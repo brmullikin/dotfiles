@@ -40,7 +40,7 @@ function pytest() {
     py.test -v $1
 }
 function cov() {
-    py.test -v --cov-report term-missing --cov $1
+    py.test -v --cov-report term-missing --cov --ignore=node_modules $1
 }
 
 function brmflask() {
