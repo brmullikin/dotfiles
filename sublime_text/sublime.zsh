@@ -1,3 +1,3 @@
 # Easier defaults for Sublime text
-alias e='subl .'
-alias sub='subl'
+alias e='sublime .'
+alias sub='sublime'

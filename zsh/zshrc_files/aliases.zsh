@@ -23,7 +23,8 @@ alias hsc='www; cd homestead/code'
 alias hsl='www; cd homestead/launch'
 
 # Servers
-alias plato='ssh ben@plato.dissata.com -p 326'
+#alias plato='ssh ben@plato.dissata.com -p 326'
+alias plato='mosh --ssh="ssh -p 326" ben@plato.dissata.com'
 alias cicero='ssh root@cicero.dissata.com'
 
 # Gunicorn Config

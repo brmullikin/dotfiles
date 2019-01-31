@@ -4,7 +4,7 @@
 # Install Homebrew if not already installed
 if test ! $(which brew); then
     echo "Installing Homebrew..."
-    /usr/local/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     # Allow for installation of apps via CLI
     brew tap caskroom/cask
     echo "Tapped caskroom/cask"
