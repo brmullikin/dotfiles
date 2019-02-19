@@ -7,21 +7,6 @@ export PYTHONDONTWRITEBYTECODE=True
 # WWW directory
 alias www='cd ~/www'
 
-# Website aliases
-alias notes='www; cd heroku/brmullikin'
-alias netcrit='www; cd heroku/netcrit'
-alias inexsilio='www; cd heroku/inexsilio'
-alias olb='www; cd heroku/oldlostbooks'
-alias lit='www; cd heroku/goodlitcrit'
-alias brm='www;cd heroku/brmwebdev'
-alias gen='www; cd generators/generator-brmflask'
-alias mgp='www; cd mgp/mgp'
-alias tpb='www; cd heroku/towerpressbooks'
-
-# Homestead
-alias hsc='www; cd homestead/code'
-alias hsl='www; cd homestead/launch'
-
 # Servers
 #alias plato='ssh ben@plato.dissata.com -p 326'
 alias plato='mosh --ssh="ssh -p 326" ben@plato.dissata.com'
