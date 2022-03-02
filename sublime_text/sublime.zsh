@@ -1,5 +1,4 @@
 # Easier defaults for Sublime text
-alias e='sublime .'
+alias e='vs .'
 alias sub='sublime'
-
 alias vs='code'

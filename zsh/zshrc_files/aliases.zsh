@@ -6,6 +6,7 @@ export PYTHONDONTWRITEBYTECODE=True
 
 # WWW directory
 alias www='cd ~/www'
+alias ideco='cd ~/www; cd github/idecoio'
 
 # Servers
 #alias plato='ssh ben@plato.dissata.com -p 326'
