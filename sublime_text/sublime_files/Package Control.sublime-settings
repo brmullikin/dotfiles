@@ -1,38 +1,18 @@
 {
 	"bootstrapped": true,
-	"in_process_packages":
-	[
-	],
 	"installed_packages":
 	[
-		"Alignment",
 		"All Autocomplete",
-		"Anaconda",
-		"ApacheConf.tmLanguage",
-		"AutoFileName",
-		"Emmet",
+		"Color Highlighter",
 		"File History",
 		"GitGutter",
 		"HTML-CSS-JS Prettify",
-		"Jinja2",
-		"LESS",
-		"Local History",
-		"Minify",
-		"Monokai - Spacegray",
-		"Oceanic Color Scheme",
 		"Origami",
 		"Package Control",
-		"SCSS",
-		"SideBarEnhancements",
 		"SublimeLinter",
-		"SublimeLinter-flake8",
-		"SublimeLinter-pep8",
-		"Sublimerge 3",
-		"SyncedSideBar",
-		"Theme - Afterglow",
 		"Theme - Cobalt2",
-		"Theme - Spacegray",
-		"TrailingSpaces",
-		"WordHighlight"
-	]
+	],
+	"in_process_packages":
+	[
+	],
 }
