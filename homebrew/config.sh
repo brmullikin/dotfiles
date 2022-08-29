@@ -14,7 +14,7 @@ if test ! $(which brew); then
 fi
 
 # Install Brew Packages
-brew_packges="git imagemagick node python python3 siege wget z zsh zsh-completions"
+brew_packges="git imagemagick node python python3 siege wget z zsh zsh-completions gnupg tmux mosh"
 for brew_pkg in ${brew_packges}; do
     if ! brew list -1 | grep -q "^${brew_pkg}\$"; then
         echo "Installing '$brew_pkg'..."

@@ -1,0 +1,7 @@
+# This is Git's per-user configuration file.
+[user]
+	name = B R Mullikin
+	email = ben@brmullikin.com
+	signingkey = 84B2D0825981AC54
+[commit]
+	gpgsign = true
