@@ -1,0 +1,10 @@
+## Local Dev
+127.0.0.1   localhost
+255.255.255.255 broadcasthost
+::1             localhost
+127.0.0.1 kubernetes.docker.internal
+
+## Personal
+
+45.33.23.63 cicero.dissata.com
+198.58.117.224 cicero.dissata.com
